@@ -1,0 +1,43 @@
+/*
+	LoadingPanel.JS [base stylesheet]
+	http://acidjs.wemakesites.net/web-20-ajax-loading-panel.html
+*/
+
+html, body
+{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#loading-panel-js-modal-overlay,
+#loading-panel-js
+{
+	-moz-user-select: none;
+	position: fixed;
+}
+
+#loading-panel-js-modal-overlay
+{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+#loading-panel-js
+{
+	top: 50%;
+	left: 50%;
+	z-index: 1000;
+	cursor: wait;
+	background-repeat: no-repeat;
+}
+
+* html #loading-panel-js-modal-overlay,
+* html #loading-panel-js
+{
+	position: absolute;
+}
